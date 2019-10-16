@@ -1,0 +1,129 @@
+#main-doc{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  background-color:lightblue;
+  margin-left:25%;
+  height:100%;
+  
+}
+#main-container{
+  max-width:600px;
+  background-color:;
+}
+#main-doc p{
+  text-align:center;
+}
+#navbar{
+  height:100vh;
+  width:25%;
+  position: fixed;
+  left: 0px;
+  background-color: lightgray;
+  border: 2px solid black;
+  box-shadow: 0 0 10px 10px rgba(100, 100, 100, 0.5);
+}
+#navbar header{
+  text-align:center;
+  margin-top:10px;
+  font-weight: bold;
+  font-size:1.5em;
+}
+#navbar ul{
+  list-style:none;
+  width:100%;
+  padding:0;
+  height:70vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+}
+#navbar li{
+  
+  display:flex;
+  justify-content: center;
+  padding:10px 0px 10px 0px;
+  border-top: 2px solid;
+  border-bottom:2px solid;
+}
+#navbar a{
+  display: block;
+  text-decoration:none;
+  color: black;
+}
+#navbar a:hover{
+  color: lightblue;
+  border-radius:10%;
+    background-color:rgb(100,100,100);
+    padding:10px;
+}
+main h1{
+  text-align:center;
+}
+
+code{
+  color: red;
+}
+blockquote{
+  background-color: lightgray;
+}
+@media only screen and (max-width: 850px) {
+  #navbar header{
+  display:flex;
+  align-items:center;
+  padding:15px;
+  margin-top:0px;
+  font-weight: bold;
+  
+}
+  #navbar{
+  height:50px;
+  width:100%;
+  position: fixed;
+  top: 0px;
+  background-color: lightgray;
+  display: flex;
+  justify-content:space-between;
+}
+  #navbar li{
+  display:block;
+  padding:0;
+  border-top: 0px;
+  border-bottom:0px;
+}
+  #navbar ul{
+    display:flex;
+    justify-content:space-around;
+    width:70%;
+    height:100%;
+  flex-direction:row;
+  
+  }
+  #main-doc{
+    margin-left:0;
+    margin-top:50px;
+    width:100%;
+  }
+  main h1{
+  padding-top:50px;
+  padding-bottom:50px;
+}
+}
+@media only screen and (max-width: 625px) {
+  #navbar ul{
+    display: none;
+    text-align:center;
+  }
+  #navbar header{
+    display:flex;
+    justify-content:center;
+    width:100%;
+  }
+  .main-section{
+    max-width: 90vw;
+  }
+}
+body{
+  background-color:lightblue;
+}
